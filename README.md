@@ -1,0 +1,18 @@
+# Shell Configuration Setup
+
+Follow the steps below to set up your Shell configuration:
+
+## Step 1: Clone the Repository
+
+Clone the repository to the `~/.config/zsh` folder using the following command:
+
+```bash
+git clone https://github.com/Sudharshan1409/shell-config.git ~/.config/zsh
+```
+
+## Step 2: Update the Main `~/.zshrc` File
+```plaintext
+source ~/.config/zsh/init.sh
+```
+
+## Yor're All Set!
