@@ -9,6 +9,7 @@ alias lla="exa -la"
 alias zshconf="vim ~/.zshrc"
 alias pyglobalenv="source ~/venv/bin/activate"
 alias sudo="sudo -E -s"
+alias cl="clear"
 
 # Navigation aliases
 alias desk="cd ~/Desktop"
