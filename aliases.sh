@@ -20,6 +20,7 @@ alias gitconf="cd ~/.config/git"
 alias home="cd ~"
 alias projects="cd ~/projects"
 alias shellconf="cd ~/.config/zsh"
+alias wezconf="cd ~/.config/wezterm"
 
 # Git aliases
 
@@ -74,6 +75,8 @@ function aliases() {
             echo "gitconf --> cd ~/.config/git"
             echo "home --> cd ~"
             echo "projects --> cd ~/projects"
+            echo "shellconf --> cd ~/.config/zsh"
+            echo "wezconf --> cd ~/.config/wezterm"
             ;;
         gwt)
             echo "Git Worktree aliases:"
