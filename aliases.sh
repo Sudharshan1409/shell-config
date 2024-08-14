@@ -10,6 +10,7 @@ alias zshconf="vim ~/.zshrc"
 alias pyglobalenv="source ~/venv/bin/activate"
 alias sudo="sudo -E -s"
 alias cl="clear"
+alias copy="xclip -selection clipboard"
 
 # Navigation aliases
 alias desk="cd ~/Desktop"
@@ -18,7 +19,7 @@ alias vimconf="cd ~/.config/nvim"
 alias tmuxconf="cd ~/.config/tmux"
 alias gitconf="cd ~/.config/git"
 alias home="cd ~"
-alias projects="cd ~/projects"
+alias proj="cd ~/projects"
 alias shellconf="cd ~/.config/zsh"
 alias wezconf="cd ~/.config/wezterm"
 
@@ -74,7 +75,7 @@ function aliases() {
             echo "tmuxconf --> cd ~/.config/tmux"
             echo "gitconf --> cd ~/.config/git"
             echo "home --> cd ~"
-            echo "projects --> cd ~/projects"
+            echo "proj --> cd ~/projects"
             echo "shellconf --> cd ~/.config/zsh"
             echo "wezconf --> cd ~/.config/wezterm"
             ;;
