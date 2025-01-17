@@ -1,7 +1,7 @@
 function tmux() {
     # If no arguments are provided, simply start tmux
     if [ $# -eq 0 ]; then
-        /usr/bin/tmux
+        $TMUX_PATH
         return 1
     fi
 
