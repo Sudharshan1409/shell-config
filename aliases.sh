@@ -15,6 +15,7 @@ alias copy="xclip -selection clipboard"
 
 # Navigation aliases
 alias desk="cd ~/Desktop"
+alias down="cd ~/Downloads"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias vimconf="cd ~/.config/nvim"
 alias tmuxconf="cd ~/.config/tmux"
@@ -25,7 +26,6 @@ alias shellconf="cd ~/.config/zsh"
 alias wezconf="cd ~/.config/wezterm"
 
 # Git aliases
-
 alias g="git"
 alias gi="git init"
 alias gs="git status"
