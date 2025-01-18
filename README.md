@@ -18,6 +18,7 @@ git clone git@github.com:Sudharshan1409/shell-config.git ~/.config/zsh
 
 ## Step 2: Update the Main `~/.zshrc` File
 ```plaintext
+export TMUX_PATH="Path of your tmux"
 source ~/.config/zsh/init.sh
 ```
 
