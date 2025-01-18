@@ -14,7 +14,7 @@ function tmux() {
 
             # If only 'cns' is provided without any session name, start tmux
             if [ $# -eq 1 ]; then
-                /usr/bin/tmux
+                $TMUX_PATH
                 return 1
             fi
 
@@ -24,7 +24,7 @@ function tmux() {
             fi
 
             # Create a new tmux session with the provided session and window names
-            /usr/bin/tmux new-session -d -s $session_name -n $window_name
+            $TMUX_PATH new-session -d -s $session_name -n $window_name
             tmux split-window -h -t $session_name
             tmux split-window -v -t $session_name
             tmux select-pane -t 1
@@ -36,12 +36,12 @@ function tmux() {
 
             # If only 'kp' is provided without any pane id, kill active pane
             if [ $# -eq 1 ]; then
-                /usr/bin/tmux kill-pane
+                $TMUX_PATH kill-pane
                 return 1
             fi
 
             # Kill the specified pane
-            /usr/bin/tmux kill-pane -t $pane_id
+            $TMUX_PATH kill-pane -t $pane_id
             ;;
         help)
             # Display help information for user-defined commands and tmux commands
@@ -85,7 +85,7 @@ function tmux() {
             ;;
         *)
             # If the command is not recognized, pass it directly to tmux
-            /usr/bin/tmux $@
+            $TMUX_PATH $@
             ;;
     esac
 }
