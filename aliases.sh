@@ -24,6 +24,8 @@ alias home="cd ~"
 alias proj="cd ~/projects"
 alias shellconf="cd ~/.config/zsh"
 alias wezconf="cd ~/.config/wezterm"
+alias yaziconf="cd ~/.config/yazi"
+alias y="yazi"
 
 # Git aliases
 alias g="git"
