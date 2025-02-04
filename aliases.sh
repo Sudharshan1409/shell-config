@@ -12,6 +12,8 @@ alias pyglobalenv="source ~/venv/bin/activate"
 alias sudo="sudo -E -s"
 alias cl="clear"
 alias copy="xclip -selection clipboard"
+alias time="sh ~/.config/zsh/time.sh"
+alias memory="sh ~/.config/zsh/memory.sh"
 
 # Navigation aliases
 alias desk="cd ~/Desktop"
