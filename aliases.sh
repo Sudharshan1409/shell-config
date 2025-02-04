@@ -11,7 +11,6 @@ alias zshconf="vim ~/.zshrc"
 alias pyglobalenv="source ~/venv/bin/activate"
 alias sudo="sudo -E -s"
 alias cl="clear"
-alias copy="xclip -selection clipboard"
 alias time="sh ~/.config/zsh/time.sh"
 alias memory="sh ~/.config/zsh/memory.sh"
 
@@ -103,6 +102,9 @@ function aliases() {
             echo "zshconf --> vim ~/.zshrc"
             echo "pyglobalenv --> source ~/venv/bin/activate"
             echo "sudo --> sudo -E -s"
+            echo "cl --> clear"
+            echo "time --> display time"
+            echo "memory --> display memory allocation"
             ;;
         *)
             echo "Usage: aliases"
