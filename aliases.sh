@@ -1,3 +1,4 @@
+#!/bin/bash
 # Basic aliases
 alias ls="lsd"
 alias vim="nvim"
@@ -10,7 +11,7 @@ alias lla="lsd -la"
 alias zshconf="vim ~/.zshrc"
 alias pyglobalenv="source ~/venv/bin/activate"
 alias sudo="sudo -E -s"
-alias cl="clear"
+alias cl="clear;clear"
 alias time="sh ~/.config/zsh/time.sh"
 alias memory="sh ~/.config/zsh/memory.sh"
 
