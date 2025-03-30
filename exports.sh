@@ -19,3 +19,21 @@ export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 # export npm global path
 
 export PATH=~/.npm-global/bin:$PATH
+
+# Load API keys from a JSON configuration file
+OPENAI_CONFIG_FILE="$HOME/.config/creds/openai.json"
+GOOGLE_CONFIG_FILE="$HOME/.config/creds/google.json"
+
+if [[ -f "$OPENAI_CONFIG_FILE" ]]; then
+  OPENAI_API_KEY=$(jq -r '.openai_api_key' "$OPENAI_CONFIG_FILE")
+  export OPENAI_API_KEY
+fi
+
+if [[ -f "$GOOGLE_CONFIG_FILE" ]]; then
+  GOOGLE_SEARCH_API_KEY=$(jq -r '.google_search_api_key' "$GOOGLE_CONFIG_FILE")
+  GOOGLE_SEARCH_ENGINE_ID=$(jq -r '.google_search_engine_id' "$GOOGLE_CONFIG_FILE")
+
+  export GOOGLE_SEARCH_API_KEY
+  export GOOGLE_SEARCH_ENGINE_ID
+fi
+
