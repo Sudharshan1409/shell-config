@@ -28,7 +28,7 @@ alias shellconf="cd ~/.config/zsh"
 alias wezconf="cd ~/.config/wezterm"
 alias yaziconf="cd ~/.config/yazi"
 alias y="yazi"
-alias credsfiles="cd ~/.config/creds"
+alias credconf="cd ~/.config/creds"
 
 # Git aliases
 alias g="git"
