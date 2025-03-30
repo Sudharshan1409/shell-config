@@ -11,5 +11,3 @@ source "$HOME/.config/zsh/aliases.sh"
 # shellcheck source=/Users/enigma/.config/zsh/tmux.sh
 source "$HOME/.config/zsh/tmux.sh"
 
-# shellcheck source=/Users/enigma/.config/zsh/creds.sh
-source "$HOME/.config/zsh/creds.sh"
