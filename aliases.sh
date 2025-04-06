@@ -29,6 +29,8 @@ alias wezconf="cd ~/.config/wezterm"
 alias yaziconf="cd ~/.config/yazi"
 alias y="yazi"
 alias credconf="cd ~/.config/creds"
+alias aeroconf="cd ~/.config/aerospace"
+alias sketchyconf="cd ~/.config/sketchybar"
 
 # Git aliases
 alias g="git"
@@ -52,6 +54,11 @@ alias gw="git worktree"
 alias gwa="git worktree add"
 alias gwl="git worktree list"
 alias gwr="git worktree remove"
+
+gwc() {
+    cd "$(git worktree list | grep "\[$1\]" | awk '{print $1}')"
+}
+
 alias getrepo="~/.config/zsh/getrepo.sh"
 
 function aliases() {
@@ -86,7 +93,8 @@ function aliases() {
             echo "wezconf --> cd ~/.config/wezterm"
             echo "yaziconf --> cd ~/.config/yazi"
             echo "y --> yazi"
-            echo "credsfiles --> cd ~/.config/creds"
+            echo "credconf --> cd ~/.config/creds"
+            echo "aerospace --> cd ~/.config/aerospace"
             ;;
         gwt)
             echo "Git Worktree aliases:"
@@ -120,4 +128,8 @@ function aliases() {
             echo "basic --> Basic aliases"
             ;;
     esac
+}
+
+function ff() {
+    aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
 }
